@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Thu, Jun 04, 2026 05:51:10 AM
+//Last modified: Thu, Jun 04, 2026 03:16:40 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "391B19D4-4DD0-B107-E92D-DE9E3FCFA93D";
+fileInfo "UUID" "9EFF4FDE-442D-DCE6-8131-EA937808E8BF";
 createNode transform -s -n "persp";
 	rename -uid "A6A5E971-455B-2599-4DF2-DAB591EDC1CE";
 	setAttr ".v" no;
@@ -51,15 +51,15 @@ createNode camera -s -n "topShape" -p "top";
 createNode transform -s -n "front";
 	rename -uid "202570CF-4991-B339-7AB7-B9945A6EEA56";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.793293731023992 12.099144271953543 33.448219172016948 ;
-	setAttr ".r" -type "double3" -8.4000000000014676 17.599999999999866 -2.0854659440984981e-16 ;
+	setAttr ".t" -type "double3" 20.218140199890239 0.85032579479518899 27.576205608197188 ;
+	setAttr ".r" -type "double3" 13.799999999999901 33.19999999999937 -9.5025404116361152e-16 ;
 	setAttr ".rpt" -type "double3" 3.8597418110527912e-15 1.7438624141802599e-14 -6.8904801928268632e-15 ;
 createNode camera -s -n "frontShape" -p "front";
 	rename -uid "CECD8147-4619-C619-6944-858B39BFC07C";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 39.660738609830666;
+	setAttr ".coi" 39.660738609833039;
 	setAttr ".ow" 17.199527952669467;
 	setAttr ".imn" -type "string" "front";
 	setAttr ".den" -type "string" "front_depth";
