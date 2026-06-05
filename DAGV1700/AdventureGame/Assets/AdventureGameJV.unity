@@ -1278,7 +1278,7 @@ Transform:
   m_GameObject: {fileID: 695991092}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.01, y: -1.47, z: 0}
+  m_LocalPosition: {x: -7.71, y: -1.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2028,7 +2028,7 @@ GameObject:
   - component: {fileID: 1042986653}
   - component: {fileID: 1042986652}
   - component: {fileID: 1042986654}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BurstPS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8032,7 +8032,7 @@ GameObject:
   - component: {fileID: 1707034559}
   - component: {fileID: 1707034558}
   - component: {fileID: 1707034557}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TriggerObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8240,7 +8240,7 @@ Transform:
   m_GameObject: {fileID: 1785441177}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.55, y: -0.25, z: 0}
+  m_LocalPosition: {x: -3.56, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
