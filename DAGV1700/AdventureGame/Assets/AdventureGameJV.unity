@@ -5222,7 +5222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1356726409814976211, guid: 7e4279db2c95a7a41acc723e2a396d58, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 7.47
       objectReference: {fileID: 0}
     - target: {fileID: 1356726409814976211, guid: 7e4279db2c95a7a41acc723e2a396d58, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5399,6 +5399,7 @@ GameObject:
   - component: {fileID: 416746329}
   - component: {fileID: 416746328}
   - component: {fileID: 416746327}
+  - component: {fileID: 416746330}
   m_Layer: 5
   m_Name: Healthbar
   m_TagString: Untagged
@@ -5437,7 +5438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1b3746124a41cd90cb0e79f73be2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataObj: {fileID: 0}
+  dataObj: {fileID: 11400000, guid: e9a7e3edddaba4f548f5f5e882832063, type: 2}
 --- !u!114 &416746328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5476,6 +5477,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416746325}
   m_CullTransparentMesh: 1
+--- !u!114 &416746330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416746325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ecbdb87469da402c9810f8ecb900368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHoldTime: 0.1
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e9a7e3edddaba4f548f5f5e882832063, type: 2}
+        m_TargetAssemblyTypeName: SimpleFloatData, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &450719990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5494,7 +5526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3527749078230801791, guid: e7b3fbf7fafe77143bea4b2b96aabe0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.03
+      value: 8.11
       objectReference: {fileID: 0}
     - target: {fileID: 3527749078230801791, guid: e7b3fbf7fafe77143bea4b2b96aabe0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5605,6 +5637,30 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: e9a7e3edddaba4f548f5f5e882832063, type: 2}
+        m_TargetAssemblyTypeName: SimpleFloatData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0.1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 416746327}
+        m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+        m_MethodName: UpdateWithFloatData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5731,7 +5787,7 @@ Transform:
   m_GameObject: {fileID: 690895963}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.02, y: -0.58, z: 0}
+  m_LocalPosition: {x: -3.02, y: 2.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6046,7 +6102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3527749078230801791, guid: e7b3fbf7fafe77143bea4b2b96aabe0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.41
+      value: 8.07
       objectReference: {fileID: 0}
     - target: {fileID: 3527749078230801791, guid: e7b3fbf7fafe77143bea4b2b96aabe0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12279,7 +12335,7 @@ Transform:
   m_GameObject: {fileID: 1099560470}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.53, y: -1.62, z: 0}
+  m_LocalPosition: {x: -5.1, y: -1.62, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12997,7 +13053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4194717358576806373, guid: 5e0fc0874b4b3114f97e76c727e867b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0822
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 4194717358576806373, guid: 5e0fc0874b4b3114f97e76c727e867b8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13308,7 +13364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3527749078230801791, guid: e7b3fbf7fafe77143bea4b2b96aabe0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 7.53
       objectReference: {fileID: 0}
     - target: {fileID: 3527749078230801791, guid: e7b3fbf7fafe77143bea4b2b96aabe0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13458,7 +13514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 967276589475508446, guid: 95c756dca0be4314a844eb5125282013, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.35
+      value: 3.39
       objectReference: {fileID: 0}
     - target: {fileID: 967276589475508446, guid: 95c756dca0be4314a844eb5125282013, type: 3}
       propertyPath: m_LocalPosition.y
