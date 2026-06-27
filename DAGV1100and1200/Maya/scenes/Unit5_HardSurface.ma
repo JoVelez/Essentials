@@ -1,17 +1,18 @@
 //Maya ASCII 2027 scene
 //Name: Unit5_HardSurface.ma
-//Last modified: Fri, Jun 26, 2026 08:30:31 PM
+//Last modified: Fri, Jun 26, 2026 08:31:51 PM
 //Codeset: 1252
 requires maya "2027";
 requires "stereoCamera" "10.0";
-requires "mtoa" "5.6.0";
+requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
+		 "mtoa" "5.6.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "0FC0BBF9-4E53-4ABD-CA86-349F3D68ED53";
+fileInfo "UUID" "848F94FE-4FEB-F635-C6A7-2C8509D2F6E8";
 createNode transform -s -n "persp";
 	rename -uid "447F2E68-46FF-4D12-C850-EFBA9428E0E8";
 	setAttr ".v" no;
@@ -100,8 +101,8 @@ createNode camera -n "backShape" -p "back";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "Decor";
 	rename -uid "518188F1-444D-0C5D-808A-3A80E1A2C0E5";
-	setAttr ".rp" -type "double3" -3.9473925828933716 10.802040565853904 -0.3173062801361084 ;
-	setAttr ".sp" -type "double3" -3.9473925828933716 10.802040565853904 -0.3173062801361084 ;
+	setAttr ".rp" -type "double3" -2.8140594959259033 8.653475284576416 -0.62160462141036987 ;
+	setAttr ".sp" -type "double3" -2.8140594959259033 8.653475284576416 -0.62160462141036987 ;
 createNode transform -n "RD_SingleBook" -p "Decor";
 	rename -uid "9803C8A2-4B50-6BBB-3CE7-849FE92BFE57";
 	setAttr ".rp" -type "double3" -4.7589988560754737 7.8419189566103515 -0.59836794914491431 ;
@@ -10057,8 +10058,8 @@ createNode mesh -n "PottedSucculentShape" -p "PottedSucculent";
 	setAttr ".dsm" 2;
 createNode transform -n "Table";
 	rename -uid "F338799E-40D6-8456-91CE-44919CEF19DE";
-	setAttr ".rp" -type "double3" 0.029954932318325245 3.8831198215484619 0 ;
-	setAttr ".sp" -type "double3" 0.029954932318325245 3.8831198215484619 0 ;
+	setAttr ".rp" -type "double3" 0.029954910278320312 3.8940582275390625 0 ;
+	setAttr ".sp" -type "double3" 0.029954910278320312 3.8940582275390625 0 ;
 createNode transform -n "CoffeeTable" -p "Table";
 	rename -uid "DA9C3C6E-4D83-CDB4-85B3-FB99FC96DF69";
 	setAttr ".rp" -type "double3" 0.029954932318325245 3.8831196797733996 0 ;
@@ -14883,6 +14884,21 @@ createNode groupId -n "groupId16";
 createNode groupId -n "groupId17";
 	rename -uid "8AC32C22-4ECC-DFF9-4E9A-40A4635C675D";
 	setAttr ".ihi" 0;
+createNode aiOptions -s -n "defaultArnoldRenderOptions";
+	rename -uid "FDDBE963-4DDF-8CA3-EB22-99A56B5BFBFE";
+	setAttr ".version" -type "string" "5.6.0";
+createNode aiAOVFilter -s -n "defaultArnoldFilter";
+	rename -uid "04B4FF8C-46E2-7FBA-FC45-119723FDF67F";
+	setAttr ".ai_translator" -type "string" "gaussian";
+createNode aiAOVDriver -s -n "defaultArnoldDriver";
+	rename -uid "B62751BB-4CA1-AEC6-072F-57A123164028";
+	setAttr ".ai_translator" -type "string" "exr";
+createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
+	rename -uid "40066338-4585-B2C9-AF79-63843BBD171E";
+	setAttr ".ai_translator" -type "string" "maya";
+	setAttr ".output_mode" 0;
+createNode aiImagerDenoiserOidn -s -n "defaultArnoldDenoiser";
+	rename -uid "1B12CE6B-45C6-0707-F05A-BA883EE0DE7B";
 select -ne :time1;
 	setAttr ".o" 3;
 	setAttr ".unw" 3;
@@ -14970,6 +14986,12 @@ connectAttr "place2dTexture1.vt3" "file1.vt3";
 connectAttr "place2dTexture1.vc1" "file1.vc1";
 connectAttr "place2dTexture1.o" "file1.uv";
 connectAttr "place2dTexture1.ofs" "file1.fs";
+connectAttr ":defaultArnoldDenoiser.msg" ":defaultArnoldRenderOptions.imagers" -na
+		;
+connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
+		 -na;
+connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
+connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
