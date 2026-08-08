@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Scene_2_Main.ma
-//Last modified: Fri, Aug 07, 2026 09:25:32 PM
+//Last modified: Fri, Aug 07, 2026 09:26:00 PM
 //Codeset: 1252
 file -rdi 1 -ns "PicnicTable" -dr 1 -rfn "PicnicTableRN" -op "VERS|2027|UVER|undef|MADE|undef|CHNG|Fri, Jul 17, 2026 06:24:21 PM|ICON|undef|INFO|undef|OBJN|8|INCL|undef(|LUNI|cm|TUNI|film|AUNI|deg|TDUR|141120000|"
 		 -typ "mayaBinary" "C:/Users/jolee/GitHub/Essentials/DAGV1100and1200/Maya//scenes/PicnicTable.mb";
@@ -30,7 +30,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "16323AFA-4332-4BEB-514B-04BC9B3BEE3A";
+fileInfo "UUID" "8749EC90-4BA6-F0A3-5FEE-39A478ACEB15";
 createNode transform -s -n "persp";
 	rename -uid "99E229F0-40C2-DC70-69DE-FBA88B62A32C";
 	setAttr ".v" no;
