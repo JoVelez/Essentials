@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: AnimationPage90Starter.ma
-//Last modified: Mon, Sep 07, 2026 04:42:14 PM
+//Last modified: Mon, Sep 07, 2026 07:35:53 PM
 //Codeset: 1252
 requires maya "2027";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "09F2ACF1-40D1-2F11-DD8C-09940E9C58EE";
+fileInfo "UUID" "A568B897-4E79-2CB8-09B4-E4AF11DAB982";
 createNode transform -s -n "persp";
 	rename -uid "1DFBA4A4-134A-59AA-2739-3C93ABFFD067";
 	setAttr ".v" no;
@@ -350,18 +350,21 @@ createNode materialInfo -n "materialInfo1";
 createNode animCurveTA -n "Arm_rotateX";
 	rename -uid "F8024603-48C9-EB43-01DC-78A98608EB31";
 	setAttr ".tan" 18;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 0 13 0 25 0;
 createNode animCurveTA -n "Arm_rotateY";
 	rename -uid "751D7C8E-4C05-AF9E-C478-448A906E4D40";
 	setAttr ".tan" 18;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 0 13 0 25 0;
 createNode animCurveTA -n "Arm_rotateZ";
 	rename -uid "AADA2D08-4F17-B74C-924E-5580C4B70371";
-	setAttr ".tan" 18;
-	setAttr ".wgt" no;
+	setAttr ".tan" 1;
 	setAttr -s 3 ".ktv[0:2]"  1 50 13 -50 25 50;
+	setAttr -s 3 ".kix[0:2]"  0.99371398740338623 1.042276207136394 0.99371398740338623;
+	setAttr -s 3 ".kiy[0:2]"  -0.31613449120974829 0.15806763595790232 
+		-0.31613449120974829;
+	setAttr -s 3 ".kox[0:2]"  0.99371450423327312 1.042276355670765 0.99371450423327312;
+	setAttr -s 3 ".koy[0:2]"  -0.31613532248292731 0.15806755051016808 
+		-0.31613532248292731;
 createNode animCurveTA -n "Elbow_rotateX";
 	rename -uid "CAD26C05-4370-A869-DBC1-38BA94E3D488";
 	setAttr ".tan" 18;
@@ -433,7 +436,6 @@ createNode animCurveTU -n "Hand_scaleZ";
 createNode animCurveTU -n "Arm_visibility";
 	rename -uid "6714135B-43C0-4436-3D41-E49D22780438";
 	setAttr ".tan" 9;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 1 13 1 25 1;
 	setAttr -s 3 ".kot[0:2]"  5 5 5;
 	setAttr -s 3 ".kox[0:2]"  0 0 0;
@@ -441,32 +443,26 @@ createNode animCurveTU -n "Arm_visibility";
 createNode animCurveTL -n "Arm_translateX";
 	rename -uid "41FE429E-48A5-4B7D-23F7-8E95402A71E7";
 	setAttr ".tan" 18;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 0 13 0 25 0;
 createNode animCurveTL -n "Arm_translateY";
 	rename -uid "592D42CC-4AC4-4C68-EC56-6D82622BB409";
 	setAttr ".tan" 18;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 0 13 0 25 0;
 createNode animCurveTL -n "Arm_translateZ";
 	rename -uid "B2D231F2-4F08-96FF-6AB1-208BD330619F";
 	setAttr ".tan" 18;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 0 13 0 25 0;
 createNode animCurveTU -n "Arm_scaleX";
 	rename -uid "A7E1A2EB-4902-5BA5-83C1-1FA4CAB65C1B";
 	setAttr ".tan" 18;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 1 13 1 25 1;
 createNode animCurveTU -n "Arm_scaleY";
 	rename -uid "29058F39-4C13-3F18-B7D5-FE9DFC43B2BD";
 	setAttr ".tan" 18;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 1 13 1 25 1;
 createNode animCurveTU -n "Arm_scaleZ";
 	rename -uid "65E600EA-4D09-25AB-0FF1-088CCFB9111A";
 	setAttr ".tan" 18;
-	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 1 13 1 25 1;
 createNode animCurveTU -n "Elbow_visibility";
 	rename -uid "8FDF771D-4AF9-A796-963C-2B9733322571";
@@ -507,8 +503,8 @@ createNode animCurveTU -n "Elbow_scaleZ";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 1 13 1 25 1;
 select -ne :time1;
-	setAttr ".o" 3;
-	setAttr ".unw" 3;
+	setAttr ".o" 2;
+	setAttr ".unw" 2;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
