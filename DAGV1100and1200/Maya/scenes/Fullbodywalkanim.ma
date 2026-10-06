@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Fullbodywalkanim.ma
-//Last modified: Mon, Oct 05, 2026 05:30:33 PM
+//Last modified: Mon, Oct 05, 2026 05:31:11 PM
 //Codeset: 1252
 file -rdi 1 -ns "b23c5310377a3c120e3f7e459853d8c" -rfn "b23c5310377a3c120e3f7e459853d8cRN"
 		 -typ "image" "C:/Users/jolee/OneDrive/Desktop/5b23c5310377a3c120e3f7e459853d8c.jpg";
@@ -14,7 +14,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "D6BE61DF-45EC-0EE6-DF2E-02AC6E8A3EA0";
+fileInfo "UUID" "748C6469-4D21-4BF0-A4C9-9AB382CEA716";
 createNode transform -s -n "persp";
 	rename -uid "18E39F03-46BA-3881-8F76-079186322A58";
 	setAttr ".v" no;
@@ -2799,7 +2799,7 @@ createNode joint -n "Ultimate_Bony_v1_0_5:Bony_lShoulderJIK" -p "Ultimate_Bony_v
 	rename -uid "7A76E5BF-4D69-534B-BD8B-2D89EE4EF87B";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0.32288491062102059 -1.7763568394002505e-15 -2.2551405187698492e-17 ;
-	setAttr ".r" -type "double3" 3.7080103995998739 -0.011876327938917804 8.1809884343837993 ;
+	setAttr ".r" -type "double3" -0.69834790607304975 -0.011994290524641529 -1.5245258736548628 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0.012012327393051908 -1.844064176374666e-05 ;
@@ -2913,14 +2913,14 @@ createNode joint -n "Ultimate_Bony_v1_0_5:Bony_lHipJIK" -p "Ultimate_Bony_v1_0_5
 	rename -uid "31F534F6-4205-8B77-7DC9-30A9863069D6";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0.45938271284103405 -0.26156206998890408 2.7755575615628914e-17 ;
-	setAttr ".r" -type "double3" 0.049713135395618918 0.10516521029901002 -15.894180309627357 ;
+	setAttr ".r" -type "double3" 0.041835730640915177 0.085171948878089265 22.137290748242755 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 89.871889475996113 0.0025388865985208507 -89.993193031906827 ;
 createNode joint -n "Ultimate_Bony_v1_0_5:Bony_lKneeJIK" -p "Ultimate_Bony_v1_0_5:Bony_lHipJIK";
 	rename -uid "D653B356-405D-8AF0-8988-8CB8841D6863";
 	setAttr ".t" -type "double3" 1.9094404579790436 -3.2612801348363973e-16 1.6653345369377348e-16 ;
-	setAttr ".r" -type "double3" 4.8360672259357928e-15 -0.0012161245682212119 -59.484928411942654 ;
+	setAttr ".r" -type "double3" 7.5912196467560986e-15 -0.0019089620313119716 -92.804335394438837 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" -0.04238884823135812 -0.0060401218585147661 -3.2282045195860265 ;
@@ -2928,14 +2928,14 @@ createNode joint -n "Ultimate_Bony_v1_0_5:Bony_lKneeJIK" -p "Ultimate_Bony_v1_0_
 createNode joint -n "Ultimate_Bony_v1_0_5:Bony_lAnkleJIK" -p "Ultimate_Bony_v1_0_5:Bony_lKneeJIK";
 	rename -uid "3BF58C5E-4243-16B6-2AFB-099EE3BBA53B";
 	setAttr ".t" -type "double3" 2.0141322440132017 1.27675647831893e-15 1.6653345369377348e-16 ;
-	setAttr ".r" -type "double3" 0.027536646093151228 0.079352351370327243 10.91129817007732 ;
+	setAttr ".r" -type "double3" -0.0085341156597151923 0.13445813553608527 -29.160309354502594 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0.1227472871514126 -0.11877034672193919 46.223509382173368 ;
 createNode joint -n "Ultimate_Bony_v1_0_5:Bony_lBallJIK" -p "Ultimate_Bony_v1_0_5:Bony_lAnkleJIK";
 	rename -uid "D9F7D959-4F00-9FF8-0559-31972106B64E";
 	setAttr ".t" -type "double3" 0.798674846228693 3.8857805861880479e-16 1.1102230246251565e-16 ;
-	setAttr ".r" -type "double3" 2.4426659953639805e-12 -7.1386888838317297e-28 1.0055657023321255e-26 ;
+	setAttr ".r" -type "double3" 2.3154438081054397e-12 -6.7668821711320553e-28 9.5319248866899407e-27 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 47.007094817176245 ;
@@ -6212,7 +6212,7 @@ createNode joint -n "Ultimate_Bony_v1_0_5:Bony_rShoulderJIK" -p "Ultimate_Bony_v
 	rename -uid "C7980C5C-4B51-7E29-6878-05A347EC21AD";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.32288491062102048 0 -1.5612511283791264e-17 ;
-	setAttr ".r" -type "double3" 4.1192184046817992 -0.011873522826917003 8.1809887349626109 ;
+	setAttr ".r" -type "double3" -0.77557671882058365 -0.011991471905843059 -1.5245259300713818 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0.012012327393032799 -1.8440641810591509e-05 ;
@@ -6326,14 +6326,14 @@ createNode joint -n "Ultimate_Bony_v1_0_5:Bony_rHipJIK" -p "Ultimate_Bony_v1_0_5
 	rename -uid "43A3010E-419C-2D70-5169-518BABE92EFC";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -0.45938271284103405 -0.26156206998890408 -6.2450045135165055e-17 ;
-	setAttr ".r" -type "double3" 0.014052753607323325 -0.037689201343740437 44.942839909159403 ;
+	setAttr ".r" -type "double3" -0.16839519960483812 0.040809352527595891 -5.702277388547631 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" -90.131821776391831 -0.0025388865985176705 89.993193031906827 ;
 createNode joint -n "Ultimate_Bony_v1_0_5:Bony_rKneeJIK" -p "Ultimate_Bony_v1_0_5:Bony_rHipJIK";
 	rename -uid "DBA38A26-43BE-9AF8-FEEE-6B91B04283D0";
 	setAttr ".t" -type "double3" -1.9094404579790436 2.4633073358870661e-16 5.5511151231257827e-17 ;
-	setAttr ".r" -type "double3" -1.8741721385363437e-14 -0.0010101242312260733 -49.578118469420914 ;
+	setAttr ".r" -type "double3" -2.4898206731835529e-15 -0.00013419408717464239 -7.453558941708625 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" -0.038683484971674877 -0.0058311301185354231 -3.2282049034474274 ;
@@ -6341,14 +6341,14 @@ createNode joint -n "Ultimate_Bony_v1_0_5:Bony_rKneeJIK" -p "Ultimate_Bony_v1_0_
 createNode joint -n "Ultimate_Bony_v1_0_5:Bony_rAnkleJIK" -p "Ultimate_Bony_v1_0_5:Bony_rKneeJIK";
 	rename -uid "515C2BE6-4913-81A7-2484-429159F7F8DC";
 	setAttr ".t" -type "double3" -2.0141322440132017 -6.0229599085914742e-15 7.7715611723760958e-16 ;
-	setAttr ".r" -type "double3" 0.00073746985581036402 0.076287830415930291 2.7186821200009734 ;
+	setAttr ".r" -type "double3" 0.11266867890757139 -0.12781384265356005 11.23879610110216 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0.12274728711993338 -0.11877034672191379 46.223509382176381 ;
 createNode joint -n "Ultimate_Bony_v1_0_5:Bony_rBallJIK" -p "Ultimate_Bony_v1_0_5:Bony_rAnkleJIK";
 	rename -uid "33501695-4570-50B8-20A9-92834BCAFC1B";
 	setAttr ".t" -type "double3" -0.798674846228693 -2.7755575615628914e-16 0 ;
-	setAttr ".r" -type "double3" 1.7811106216195691e-13 -6.6592861513662871e-29 -9.9985226084160379e-28 ;
+	setAttr ".r" -type "double3" 1.6437106593803452e-11 -6.1455697911049386e-27 -9.2272080071954592e-26 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".jo" -type "double3" 0 0 47.007094817172955 ;
@@ -14800,7 +14800,7 @@ createNode transform -n "Ultimate_Bony_v1_0_5:BonylArmUpLctr" -p "Ultimate_Bony_
 	rename -uid "B2A835AE-47F8-47AE-50B0-47B9F43E6957";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 1.482180246636861 1.7763568394002505e-15 -2.9998116750530377 ;
-	setAttr ".r" -type "double3" -3.8661662110377837e-09 -9.455898025427004 1.8440642188109784e-05 ;
+	setAttr ".r" -type "double3" -3.8661662110377837e-09 -4.8774916017007044 1.8440642188109784e-05 ;
 	setAttr ".s" -type "double3" 0.99999999999999978 0.99999999999999978 0.99999999999999967 ;
 createNode locator -n "Ultimate_Bony_v1_0_5:BonylArmUpLctrShape" -p "Ultimate_Bony_v1_0_5:BonylArmUpLctr";
 	rename -uid "E5C68574-4CF2-A721-56E9-FCB428AA36C3";
@@ -14920,7 +14920,7 @@ createNode transform -n "Ultimate_Bony_v1_0_5:BonyrArmUpLctr" -p "Ultimate_Bony_
 	rename -uid "3A28FA63-4EF3-BB06-D24B-B5ACE30D3030";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -1.4821173502381675 1.7763568394002505e-15 2.6998116816463011 ;
-	setAttr ".r" -type "double3" 359.99999999613379 -12.856349535389468 -1.8440642196796849e-05 ;
+	setAttr ".r" -type "double3" 359.99999999613379 -7.4241412917321714 -1.8440642196796849e-05 ;
 	setAttr ".s" -type "double3" 1 0.99999999999999978 0.99999999999999989 ;
 createNode locator -n "Ultimate_Bony_v1_0_5:BonyrArmUpLctrShape" -p "Ultimate_Bony_v1_0_5:BonyrArmUpLctr";
 	rename -uid "96D3B3F2-4473-D7C7-69A5-6E9F1DEA1021";
@@ -15159,7 +15159,7 @@ createNode transform -n "Ultimate_Bony_v1_0_5:Bony_lLegUpLctr" -p "Ultimate_Bony
 	rename -uid "9EE5F18B-4C19-DE1F-386E-6F8365C02546";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 1.9094404579790436 -3.2612801348363973e-16 1.6653345369377348e-16 ;
-	setAttr ".r" -type "double3" -0.042388629001454556 -0.0051880178152410193 -29.742465972900391 ;
+	setAttr ".r" -type "double3" -0.042388629001454556 -0.0051880178152410193 -46.402168273925781 ;
 	setAttr ".s" -type "double3" 1 0.99999999999999989 0.99999999999999989 ;
 createNode locator -n "Ultimate_Bony_v1_0_5:Bony_lLegUpLctrShape" -p "Ultimate_Bony_v1_0_5:Bony_lLegUpLctr";
 	rename -uid "823F6889-4942-D32A-EBF9-E6AF1259DBC3";
@@ -15231,7 +15231,7 @@ createNode transform -n "Ultimate_Bony_v1_0_5:Bony_rLegUpLctr" -p "Ultimate_Bony
 	rename -uid "E290FAE7-4718-61B2-BC29-6EAB770119D3";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" -1.9094404579790427 2.4633073358870661e-16 0 ;
-	setAttr ".r" -type "double3" -0.038683273332266788 -0.0049751461411050441 -24.789058685302734 ;
+	setAttr ".r" -type "double3" -0.038683273332266788 -0.0049751461411050441 -3.726779699325562 ;
 	setAttr ".s" -type "double3" 0.99999999999999978 0.99999999999999978 0.99999999999999956 ;
 createNode locator -n "Ultimate_Bony_v1_0_5:Bony_rLegUpLctrShape" -p "Ultimate_Bony_v1_0_5:Bony_rLegUpLctr";
 	rename -uid "9A25ADDA-48B4-6867-6CB3-7AA1B01AA8D4";
@@ -130231,8 +130231,8 @@ createNode animCurveTU -n "Floor_scaleZ";
 	setAttr -s 9 ".koy[3:8]"  0 0 0 0 0 0;
 	setAttr -s 9 ".ots[3:8]"  18 0 0 0 18 0;
 select -ne :time1;
-	setAttr ".o" 3;
-	setAttr ".unw" 3;
+	setAttr ".o" 8;
+	setAttr ".unw" 8;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
